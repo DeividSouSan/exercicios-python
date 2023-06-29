@@ -1,11 +1,17 @@
+"""
+Faça um programa que leia um número de 0 a 9999 e mostre na tela cada um dos digitos separados.
+"""
+
 num = int(input("Digite um número: "))
 
-unidade = num % 10
-dezena = int(((num % 100) - unidade) / 10)
-centena = int(((num % 1000) - dezena - unidade) / 100)
-milhar = int(((num % 10000) - centena - dezena - unidade) / 1000)
+digitos = {"unidade": 0, "dezena": 0, "centena": 0, "milhar": 0}
 
-print(f"Unidade: {unidade}.\n\
-Dezena: {dezena}.\n\
-Centena: {centena}.\n\
-Milhar: {milhar}.")
+for casa in digitos:
+    digitos[casa] = num % 10
+
+    num //= 10
+
+print(f"Unidade: {digitos['unidade']}.\n\
+Dezena: {digitos['dezena']}.\n\
+Centena: {digitos['centena']}.\n\
+Milhar: {digitos['milhar']}.")
