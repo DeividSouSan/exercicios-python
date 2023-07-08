@@ -48,4 +48,3 @@ match opcoesPagamento:
         cprint(f"Sua compra de R${precoTotal:.2f} será parcelada em {numeroParcelas}x de R$!{PARCELA:.2f}! e vai custar R${PRECO_FINAL:.2f} no final.", BOLD,C_GREEN)
     case __:
         print("Opção escolhida inválida.")
-
