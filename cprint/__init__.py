@@ -26,7 +26,7 @@ BG_MAGENTA = "\033[45m"   # Magenta
 BG_CYAN = "\033[46m"      # Ciano
 BG_WHITE = "\033[47m"     # Branco
 
-def cprint(str, decoration="", color="", bg_color=""):
+def cprint(str, decoration="", color="", bg_color="", end="\n"):
     """
     A função possui quatro parâmetros: string, decoration, color e bgcolor.
     Na string passada como parâmetro o ! é usado para marcar o início e o fim do pedaço da string que deve ser colorido. Se não for passado nada toda a string será colorida.
@@ -49,4 +49,4 @@ def cprint(str, decoration="", color="", bg_color=""):
     else:
         str = decoration + color + bg_color + str
 
-    print(str)
+    print(str, end=end)
