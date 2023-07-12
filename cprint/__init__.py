@@ -26,6 +26,8 @@ BG_MAGENTA = "\033[45m"   # Magenta
 BG_CYAN = "\033[46m"      # Ciano
 BG_WHITE = "\033[47m"     # Branco
 
+END_C = "\033[m"
+
 def cprint(str, decoration="", color="", bg_color="", end="\n"):
     """
     A função possui quatro parâmetros: string, decoration, color e bgcolor.
@@ -43,7 +45,7 @@ def cprint(str, decoration="", color="", bg_color="", end="\n"):
         secondKeyPos = str.index("!", firstKeyPos+1)
         
         placeholder = str[firstKeyPos+1:secondKeyPos]
-        colorized = decoration + color + bg_color + placeholder + "\033[m"
+        colorized = decoration + color + bg_color + placeholder + END_C
 
         str = str.replace(f"!{placeholder}!", colorized);
     else:
