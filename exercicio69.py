@@ -1,5 +1,5 @@
 """
-
+Crie um programa que leia a idade e o sexo de várias pessoas. A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. No finalmostre: quantas pessoas tem mais de 18 anos, quantos homens foram cadastrados e quantas mulheres tem menos de 20 anos.
 """
 from lin import *
 # from copy import deepcopy
