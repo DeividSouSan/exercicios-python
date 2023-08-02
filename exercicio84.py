@@ -16,7 +16,7 @@ registeredPeople = [['Deivid', 56.5], ['Ana', 50.5], ['Alice', 39.6], ['Davi', 9
     keepRunning = str(input('Quer continuar? [S/N] '))
     if keepRunning.lower() == 'n':
         break
- """
+"""
 
 higherWeight = 0
 listaMaiorPeso = []
