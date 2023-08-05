@@ -4,13 +4,13 @@ Crie um programa que leia o nome e duas notas de vários alunos e guarde tudo em
 
 from lin import *
 
-studentGrades = [['Deivid', 9.5, 10], ['Alice', 7.5, 5.5], ['Ana', 8.5, 9]]
+studentGrades = []
 
 print('=-' * 25)
 print(f'{"MÉDIAS": ^50}')
 print('=-' * 25)
 
-""" while True:
+while True:
     currentStudent = []
 
     currentStudent.append(str(input("Nome: "))) 
@@ -21,7 +21,7 @@ print('=-' * 25)
 
     keepRunning = str(input('Continuar? [S/N] '))
     if keepRunning.lower() == 'n':
-        break """
+        break
 
 print(f'{"Nº":<3} | {"Nome":<10} | {"Nota":>10}')
 print('--' * 25)
